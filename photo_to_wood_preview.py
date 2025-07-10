@@ -10,11 +10,11 @@ app = Flask(__name__)
 
 # ▼▼ Map hier de houtstructuur‑namen naar texture‑URL’s ▼▼
 WOOD_TEXTURES = {
-    "Eiken":    "https://drive.google.com/file/d/1Lu5U-w6Fv5GWetAKcYyhiq9hLSZzL0fr/view?usp=drive_link",
-    "Berken":   "https://drive.google.com/file/d/1Ljvzl36-BK_9IxN8TbmQVfzBTaqrZ1uD/view?usp=drive_link",
-    "Vuren":    "https://drive.google.com/file/d/1LqLhJV08R-51px40fAcmi9WkrW-FnjS5/view?usp=drive_link",
-    "Populier": "https://drive.google.com/file/d/1Lpyo7vz7hXY-laQt-Go7q1QVQ7_D_vEr/view?usp=drive_link",
-    "MDF":      "https://drive.google.com/file/d/1Ll1IXulci2EObOtrgswlgLDLnihN7vC3/view?usp=drive_link",
+    "Eiken":    "https://iili.io/FElvUGI.jpg",
+    "Beuken":   "https://iili.io/FElvg4t.jpg",
+    "Vuren":    "https://iili.io/FElv6an.jpg",
+    "Populier": "https://iili.io/FElvvQp.jpg",
+    "MDF":      "https://iili.io/FElvSCN.jpg",
 }
 
 def enhance_contrast_gray(gray):
