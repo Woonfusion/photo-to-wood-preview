@@ -41,9 +41,14 @@ def add_text(img_bgr, watermark, caption):
         font = ImageFont.load_default()
     w, h = img.size
     draw.text((10, h - 40), watermark, font=font, fill=(255, 255, 255, 200))
-    cw, ch = draw.textsize(caption, font=font)
+    
+    bbox = draw.textbbox((0, 0), caption, font=font)
+    cw = bbox[2] - bbox[0]
+    ch = bbox[3] - bbox[1]
+    
     draw.text(((w - cw) // 2, h - ch - 10), caption, font=font, fill=(255, 255, 255))
     return cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+
 
 def enforce_orientation(img, orientation):
     h, w = img.shape[:2]
